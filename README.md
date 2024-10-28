@@ -48,18 +48,34 @@ print(years)
 ```
 
 # Plot Electricity Demand 2015-2020
-
+![electricity](image/electricity.png)
 # Plot Temperature in Every City
+Tocumen City
+![temptot](image/temptot.png)
 
+Santiago City
+![tempsan](image/tempsan.png)
+
+David City
+![tempdav](image/tempdav.png)
 # Electricity and Temperature
+Electricity and Temperature Tocumen City
+![eltoc](image/eltoc.png)
+
+Electricity and Temperature Santiago City
+![elsan](image/elsan.png)
+
+Electricity and Temperature David City
+![eldav](image/eldav.png)
 
 # Average Hourly Electricity Demand
-
+![avghour](image/avghour.png)
 # Daily Variation
+![mvhour](image/mvhour.png)
 
 # Weekly Variation
 Dataset start from Friday
-
+![mvdaily](image/mvdaily.png)
 # Preprocessing Data
 Split data into Train, Test, and Validation with Ratio 8:1:1
 ```python
@@ -124,13 +140,14 @@ model, modelhist = model_BiLSTM_attention(X_train, y_train, X_val, y_val, Nepoch
 ```
 
 Train loss and Validation loss
-
+![lossatt](image/lossatt.png)
 # Predict Results Electricity Demand
 ```python
 predictions = model.predict(X_test)
 ```
 
 Plot actual vs predicted
+![results att](https://github.com/user-attachments/assets/3fe56283-0eb5-4fcf-9ede-26a0204aefed)
 
 # Evaluate Model
 ```python
@@ -200,7 +217,7 @@ Nepochs = 1000
 model, modelhist = model_BiLSTM(X_train, y_train, X_val, y_val, Nepochs)
 ```
 # Predict Results BiLSTM
-
+![results](https://github.com/user-attachments/assets/c5e34d01-c3ac-452a-b44d-43198276853c)
 
 # Evaluate
 R²: 0.5442
@@ -210,3 +227,6 @@ RMSE: 128.2026
 MAPE: 8.5298%
 
 Correlation Coefficient (CC): 0.7511
+
+# Conclusion
+Overall, while both the BiLSTM and BiLSTM with Attention models provide reasonable predictive power, the performance metrics suggest that adding the attention mechanism has not significantly improved the results in this case. Further refinement, such as additional feature engineering, or model tuning, might help to enhance model performance. Both model can't capture some largest fluence electricity effectively.
