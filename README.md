@@ -92,7 +92,9 @@ X_train, X_temp, y_train, y_temp = train_test_split(X, y, test_size=0.2, random_
 X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=0.5, random_state=42)
 ```
 Training sequences shape: (38438, 1, 12), Target shape: (38438,)
+
 Testing sequences shape: (4805, 1, 12), Target shape: (4805,)
+
 Validation sequences shape: (4805, 1, 12), Target shape: (4805, 1, 12)
 
 # Train Data with BiLSTM-attention
