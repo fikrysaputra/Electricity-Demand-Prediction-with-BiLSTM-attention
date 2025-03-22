@@ -231,4 +231,4 @@ MAPE: 8.5298%
 Correlation Coefficient (CC): 0.7511
 
 # Conclusion
-Overall, while both the BiLSTM and BiLSTM with Attention models provide reasonable predictive power, the performance metrics suggest that adding the attention mechanism has not significantly improved the results in this case. Further refinement, such as additional feature engineering, or model tuning, might help to enhance model performance. Both model can't capture some largest fluence electricity effectively.
+Overall, while both the BiLSTM and BiLSTM with Attention models provide reasonable predictive power, the performance metrics suggest that adding the attention mechanism has not significantly improved the results in this case. Further refinement, such as additional feature engineering, or model tuning, might help to enhance model performance.
